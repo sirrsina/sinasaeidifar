@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sina Media</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Sina Saeidifar</h1>
+        <nav>
+            <a href="#services">خدمات</a>
+            <a href="#contact">ارتباط با ما</a>
+        </nav>
+    </header>
+
+    <div class="container">
+<section id="services">
+
+  <div class="services">
+
+    <div class="service">
+      <h3>طراحی و توسعه وب‌سایت</h3>
+      <p>طراحی انواع وب‌سایت‌های فروشگاهی، شرکتی، شخصی و نمونه‌کار با استفاده از تکنولوژی‌های مدرن مانند HTML، CSS، JavaScript، Python و فریم‌ورک‌هایی مثل Flask و Django.</p>
+      <div class="price">قیمت: <span>شروع از 6,000,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>پشتیبانی و نگهداری وب‌سایت</h3>
+      <p>مدیریت امنیت، بروزرسانی، رفع مشکلات فنی، بهینه‌سازی سرعت سایت و پشتیبانی فنی دائمی برای حفظ سلامت وب‌سایت شما.</p>
+      <div class="price">قیمت: <span>ماهانه 1,200,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>مدیریت و امنیت پیج اینستاگرام</h3>
+      <p>افزایش امنیت پیج، جلوگیری از نفوذ، بهینه‌سازی رمزها و تنظیمات امنیتی برای کاهش احتمال هک و دزدیده شدن پیج شما.</p>
+      <div class="price">قیمت: <span>شروع از 2,500,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>بازگردانی پیج هک‌شده یا دیسیبل‌شده</h3>
+      <p>در صورت هک یا دیسیبل شدن پیج اینستاگرام، با تجربه و روش‌های حرفه‌ای امکان بازگردانی اکانت شما فراهم است.</p>
+      <div class="price">قیمت: <span>شروع از 3,500,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>فعالسازی تیک آبی اینستاگرام</h3>
+      <p>راهنمایی و پیگیری مراحل دریافت تیک آبی رسمی (Verified Badge) برای برندها، هنرمندان و شخصیت‌های تاثیرگذار.</p>
+      <div class="price">قیمت: <span>شروع از 2,500,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>آنالیز، رشد و توسعه پیج</h3>
+      <p>بررسی دقیق عملکرد پیج، تحلیل رفتار مخاطب، تولید استراتژی محتوایی و رشد اصولی فالوئرها و تعامل پیج.</p>
+      <div class="price">قیمت: <span>شروع از 2,500,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>خدمات منیجرینگ حرفه‌ای برای رپرها</h3>
+      <p>مدیریت شبکه‌های اجتماعی، تبلیغات، برنامه‌ریزی انتشار موزیک، ساخت برند شخصی و رشد حرفه‌ای برای هنرمندان رپ.</p>
+      <div class="price">قیمت: <span>شروع از 4,500,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>ساخت و مدیریت هویت دیجیتال</h3>
+      <p>ایجاد هویت آنلاین معتبر برای افراد یا برندها با طراحی سایت، تنظیم شبکه‌های اجتماعی و تولید محتوا مطابق با اهداف کاری.</p>
+      <div class="price">قیمت: <span>شروع از 5,500,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <!-- خدمات و ایده‌های جدید پیشنهادی -->
+
+    <div class="service">
+      <h3>ساخت ربات دایرکت اینستاگرام هوشمند</h3>
+      <p>طراحی و پیاده‌سازی ربات دایرکت با پاسخگویی خودکار، پیام خوش‌آمدگویی، ثبت سفارش و ارتباط با مشتری به صورت هوشمند و ۲۴ ساعته.</p>
+      <div class="price">قیمت: <span>شروع از 4,000,000 تومان</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>تولید محتوای حرفه‌ای و مدیریت پیج اینستاگرام</h3>
+      <p>طراحی پست‌ها و استوری‌های جذاب، برنامه‌ریزی محتوایی و افزایش تعامل و فالوور واقعی برای رشد پیج اینستاگرام شما.</p>
+      <div class="price">قیمت: <span>شروع از 3,800,000 تومان ماهانه</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>ادیت حرفه‌ای ویدیو و تصاویر برای شبکه‌های اجتماعی</h3>
+      <p>ویرایش و تولید ویدیوهای جذاب، تیزر، ریلز و اصلاح تصاویر برای جذب بیشتر مخاطب و افزایش کیفیت پیج شما.</p>
+      <div class="price">قیمت: <span>شروع از 1,500,000 تومان برای هر پروژه</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+    <div class="service">
+      <h3>مشاوره استراتژی کسب‌وکار آنلاین و سوشال مدیا</h3>
+      <p>ارائه راهکارهای هدفمند برای رشد فروش و برندینگ در فضای دیجیتال و شبکه‌های اجتماعی با تحلیل دقیق بازار و رقبا.</p>
+      <div class="price">قیمت: <span>شروع از 1,800,000 تومان برای جلسه ۱ ساعته</span></div>
+      <a href="{{ url_for('contact') }}" class="btn-order">ارتباط با ما</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact">
+    <a href="{{ url_for('contact') }}">ارتباط با ما</a>
+    <p>برای دریافت مشاوره و سفارش خدمات، با ما در ارتباط باشید:</p>
+    <p>
+        <!-- <a href="mailto:sirrsina1@gmail.com">sirrsina1@gmail.com</a> |
+        <a href="tel:+989123456789">0999-146-2686</a> -->
+    </p>
+    <div class="social-icons" style="margin-top: 1rem;">
+        <a href="https://wa.me/989991462686" target="_blank" title="واتساپ">
+            <i class="fab fa-whatsapp" style="font-size: 1.5rem; color: #25d366; margin: 0 10px;"></i>
+        </a>
+        <a href="https://t.me/sinaswx" target="_blank" title="تلگرام">
+            <i class="fab fa-telegram" style="font-size: 1.5rem; color: #0088cc; margin: 0 10px;"></i>
+        </a>
+        <a href="https://instagram.com/sinaswx" target="_blank" title="اینستاگرام">
+            <i class="fab fa-instagram" style="font-size: 1.5rem; color: #e1306c; margin: 0 10px;"></i>
+        </a>
+    </div>
+</section>
+
+    </div>
+
+    <footer>
+        &copy; 2025 تمامی حقوق محفوظ است.
+    </footer>
+</body>
+
+</html>

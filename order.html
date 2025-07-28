@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم سفارش | Sina Media</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sina Saeidifar</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">صفحه اصلی</a>
+            <a href="{{ url_for('contact') }}">ارتباط با ما</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>فرم ثبت سفارش</h2>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="flash">{{ messages[0] }}</div>
+          {% endif %}
+        {% endwith %}
+
+        <form action="{{ url_for('order') }}" method="POST" class="order-form">
+            <label>نام کامل:</label>
+            <input type="text" name="name" required>
+
+            <label>شماره تماس:</label>
+            <input type="text" name="phone" required>
+
+            <label>نوع خدمات:</label>
+            <select name="service" required>
+                <option value="طراحی سایت">طراحی سایت</option>
+                <option value="پشتیبانی سایت">پشتیبانی سایت</option>
+                <option value="امنیت پیج اینستا">امنیت پیج اینستا</option>
+                <option value="بازگردانی پیج">بازگردانی پیج</option>
+                <option value="تیک آبی">فعالسازی تیک آبی</option>
+                <option value="مدیریت پیج">مدیریت پیج</option>
+                <option value="ربات دایرکت">ساخت ربات دایرکت</option>
+                <option value="تولید محتوا">تولید محتوا</option>
+                <option value="سفارش دیگر">سفارش دیگر</option>
+            </select>
+
+            <label>توضیحات سفارش:</label>
+            <textarea name="description" rows="5"></textarea>
+
+            <button type="submit">ارسال سفارش</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Sina Media
+    </footer>
+</body>
+</html> -->
